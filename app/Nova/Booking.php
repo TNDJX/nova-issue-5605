@@ -48,7 +48,26 @@ class Booking extends Resource
 
             Text::make('Name', 'name'),
 
-            BelongsTo::make('User', 'user', User::class),
+            BelongsTo::make('User', 'user', User::class)->searchable(),
+            BelongsTo::make('User', 'user', User::class)->searchable(),
+            BelongsTo::make('User', 'user', User::class)->searchable(),
+            BelongsTo::make('User', 'user', User::class)->searchable(),
+            BelongsTo::make('User', 'user', User::class)->searchable(),
+            BelongsTo::make('User', 'user', User::class)->searchable(),
+            BelongsTo::make('User', 'user', User::class)->searchable(),
+            BelongsTo::make('User', 'user', User::class)->searchable(),
+            BelongsTo::make('User', 'user', User::class)->searchable(),
+            BelongsTo::make('User', 'user', User::class)->searchable(),
+            BelongsTo::make('User', 'user', User::class)->searchable(),
+            BelongsTo::make('User', 'user', User::class)->searchable(),
+            BelongsTo::make('User', 'user', User::class)->searchable(),
+            BelongsTo::make('User', 'user', User::class)->searchable(),
+            BelongsTo::make('User', 'user', User::class)->searchable(),
+            BelongsTo::make('User', 'user', User::class)->searchable(),
+            BelongsTo::make('User', 'user', User::class)->searchable(),
+            BelongsTo::make('User', 'user', User::class)->searchable(),
+            BelongsTo::make('User', 'user', User::class)->searchable(),
+            BelongsTo::make('User', 'user', User::class)->searchable(),
 
             BelongsToMany::make('Tables', 'tables', Table::class)
                 ->filterable(),
